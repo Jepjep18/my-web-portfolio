@@ -34,6 +34,7 @@ import waternetic from './watenetic.png';
 import btms12 from './btms12.png';
 import internship from './internship.png';
 import doctrak from './doctrak.png';
+import abfi from './abfi.png'
 
 export {
   logo,
@@ -69,4 +70,5 @@ export {
   btms12,
   internship,
   doctrak,
+  abfi
 };

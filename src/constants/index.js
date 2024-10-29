@@ -27,7 +27,8 @@ import {
     waternetic,
     btms12,
     internship,
-    doctrak
+    doctrak,
+    abfi
     
   } from "../assets";
   
@@ -138,7 +139,7 @@ import {
     {
       title: "Software Developer Jr.",
       company_name: "Ana's Breeders Farm, INC.",
-      icon: shopify,
+      icon: abfi,
       iconBg: "#383E56",
       date: "May 2024 - Present",
       points: [

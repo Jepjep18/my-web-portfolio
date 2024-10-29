@@ -53,7 +53,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Software Developer",
       icon: mobile,
     },
     {
@@ -151,14 +151,21 @@ import {
     },
     
   ];
+
+  const testimonialss = [
+    {
+      testimonial: 
+        ""
+    }
+  ]
   
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
+        "He is an outstanding teammate—skilled, creative, and always ready to tackle challenges with smart, effective solutions. A true asset to any project!",
+      name: "James Tabilog",
+      designation: "Backend Developer",
+      company: "CISDEVO Department",
       image: "https://randomuser.me/api/portraits/women/4.jpg",
     },
     {

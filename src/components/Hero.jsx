@@ -1,33 +1,33 @@
 import { motion } from "framer-motion";
-
+import { useSpring, animated } from "react-spring"; // Import useSpring and animated from react-spring
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
-  return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-      >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
+  // Create a spring animation for the text
+  const textAnimation = useSpring({
+    opacity: 1,
+    from: { opacity: 0 }, // Start with opacity 0
+    config: { duration: 1000 }, // Duration of the animation
+  });
 
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+  return (
+    <section className={`relative w-full h-screen mx-auto flex items-center justify-center`}>
+      <div
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col items-center justify-center`}
+      >
+        <div className='text-center'>
+          {/* Apply the animated component to your text */}
+          <animated.h1 style={textAnimation} className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className='text-[#915EFF]'>Jefferson</span>
-          </h1>
+          </animated.h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+            I'm a creative developer passionate about transforming complex ideas into elegant designs and seamless web applications that enhance user experiences.<br className='sm:block hidden' />
           </p>
         </div>
       </div>
+      
 
-      <ComputersCanvas />
-
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div

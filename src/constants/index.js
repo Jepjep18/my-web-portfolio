@@ -23,6 +23,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    btms,
+    waternetic,
+    btms12,
+    internship,
+    doctrak
+    
   } from "../assets";
   
   export const navLinks = [
@@ -116,57 +122,33 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Laravel Developer",
+      company_name: "Internship",
+      icon: internship,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "December 2023 - May 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web applications using Laravel and other related technologies.",
+        "Collaborating with cross-functional teams including designers and other developers ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
+    
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
+      title: "Software Developer Jr.",
+      company_name: "Ana's Breeders Farm, INC.",
       icon: shopify,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "May 2024 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Developing and maintaining web applications with AngularJS and .NET, including RESTful APIs built in .NET.",
+        "Collaborating with clients, designers, and managers to ensure a smooth workflow and deliver high-quality projects.",
         "Implementing responsive design and ensuring cross-browser compatibility.",
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
   ];
   
   const testimonials = [
@@ -197,69 +179,76 @@ import {
   ];
   
   const projects = [
+    
+    
     {
-      name: "Car Rent",
+      name: "Waternetic",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Capstone Project 2024 - Waternetic is an all-in-one digitalized water system to make transactions easier and faster. This application aims to provide a digital system in a private subdivision for smoother transactions than usual. Conserve energy and effort.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "PHP",
+          color: "text-gradient-blue", // Commonly associated color for PHP
         },
         {
-          name: "mongodb",
-          color: "green-text-gradient",
+          name: "MySQL",
+          color: "text-gradient-orange", // Commonly associated color for MySQL
         },
         {
-          name: "tailwind",
-          color: "pink-text-gradient",
+          name: "Bootstrap",
+          color: "text-gradient-purple", // Commonly associated color for Bootstrap
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: waternetic,
+      source_code_link: "https://github.com/Jepjep18/Waternetic.git",
     },
     {
-      name: "Job IT",
+      name: "DocTrack",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "The Documents Tracking System is a Laravel-based solution for the Department of Information and Communications Technology Region XI, enabling efficient management and tracking of documents to enhance productivity.",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "Laravel",
+          color: "text-gradient-red", // Commonly associated color for Laravel
         },
         {
-          name: "restapi",
-          color: "green-text-gradient",
+          name: "SQL",
+          color: "text-gradient-blue", // Commonly associated color for SQL
         },
         {
-          name: "scss",
-          color: "pink-text-gradient",
+          name: "Flowbite UI",
+          color: "text-gradient-teal", // Commonly associated color for Flowbite
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: doctrak,
+      source_code_link: "https://github.com/Jepjep18/Documents_tracking.git",
     },
     {
-      name: "Trip Guide",
+      name: "BTMS",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Battery and Tire Inventory Management System: Streamline tracking, status monitoring, and record-keeping for efficient and accurate inventory control in one centralized platform.",
       tags: [
         {
-          name: "nextjs",
-          color: "blue-text-gradient",
+          name: "Angular",
+          color: "text-gradient-red", // Commonly associated color for Angular
         },
         {
-          name: "supabase",
-          color: "green-text-gradient",
+          name: "REST API",
+          color: "text-gradient-green", // Commonly associated color for REST APIs
         },
         {
-          name: "css",
-          color: "pink-text-gradient",
+          name: "Material UI",
+          color: "text-gradient-blue", // Commonly associated color for Material UI
+        },
+        {
+          name: "MySQL",
+          color: "text-gradient-orange", // Commonly associated color for MySQL
         },
       ],
-      image: tripguide,
+      image: btms12,
       source_code_link: "https://github.com/",
-    },
+    }
+    
   ];
   
   export { services, technologies, experiences, testimonials, projects };

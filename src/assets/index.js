@@ -29,6 +29,11 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import btms from './btms.png';
+import waternetic from './watenetic.png';
+import btms12 from './btms12.png';
+import internship from './internship.png';
+import doctrak from './doctrak.png';
 
 export {
   logo,
@@ -59,4 +64,9 @@ export {
   carrent,
   jobit,
   tripguide,
+  btms,
+  waternetic,
+  btms12,
+  internship,
+  doctrak,
 };

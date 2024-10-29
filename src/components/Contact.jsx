@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa"; // Import icons
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -37,9 +38,9 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Jefferson B. Arnado",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "jeparnado@gmail.com",
           message: form.message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
@@ -65,9 +66,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
-    >
+    <div className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -75,11 +74,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
-        >
+        <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -121,6 +116,22 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
+
+        {/* Social Media Icons */}
+        <div className="flex justify-center mt-8 space-x-4">
+          <a href="https://github.com/Jepjep18" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <FaGithub className="text-white hover:text-[#915EFF] transition duration-300" size={30} />
+          </a>
+          <a href="https://www.facebook.com/odanrajefferson" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <FaFacebookF className="text-white hover:text-[#915EFF] transition duration-300" size={30} />
+          </a>
+          <a href="https://www.instagram.com/jepjepjeperson" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <FaInstagram className="text-white hover:text-[#915EFF] transition duration-300" size={30} />
+          </a>
+          <a href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <FaLinkedin className="text-white hover:text-[#915EFF] transition duration-300" size={30} />
+          </a>
+        </div>
       </motion.div>
 
       <motion.div

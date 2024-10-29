@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import { FaGithub, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa"; // Import icons
+import Swal from 'sweetalert2'; // Import SweetAlert2
+import { FaGithub, FaFacebookF, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
@@ -34,8 +35,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_lg11pbf',
+        'template_m4mjida',
         {
           from_name: form.name,
           to_name: "Jefferson B. Arnado",
@@ -43,12 +44,18 @@ const Contact = () => {
           to_email: "jeparnado@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'DtTm6Z8pqB8Ax2eVZ'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          // Success confirmation
+          Swal.fire({
+            icon: 'success',
+            title: 'Success!',
+            text: 'Thank you. I will get back to you as soon as possible.',
+            confirmButtonText: 'OK'
+          });
 
           setForm({
             name: "",
@@ -59,8 +66,13 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-
-          alert("Ahh, something went wrong. Please try again.");
+          // Error confirmation
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Ahh, something went wrong. Please try again.',
+            confirmButtonText: 'OK'
+          });
         }
       );
   };

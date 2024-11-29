@@ -1,8 +1,26 @@
+import React from 'react'; // Add this import statement
+
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 
+const textVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: 20 },
+};
+
 const Hero = () => {
+  const texts = ["Jefferson Arnado", "Front End Developer", "Back End Developer"];
+  const [index, setIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 2000); // Change text every 2 seconds
+    return () => clearInterval(interval);
+  }, [texts.length]);
+
   return (
     <section className={`relative w-full h-screen mx-auto flex items-center justify-center`}>
       <div
@@ -10,10 +28,20 @@ const Hero = () => {
       >
         <div className='text-center'>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Jefferson</span>
+            Hi, I&apos;m <span className='text-[#915EFF]'>
+              <motion.span
+                variants={textVariants}
+                initial="hidden"
+                animate="visible"
+                exit="exit"
+                transition={{ duration: 0.5 }}
+              >
+                {texts[index]}
+              </motion.span>
+            </span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm a creative developer passionate about transforming complex ideas into elegant designs and seamless web applications that enhance user experiences.<br className='sm:block hidden' />
+            I&apos;m a creative developer passionate about transforming complex ideas into elegant designs and seamless web applications that enhance user experiences.<br className='sm:block hidden' />
             
           </p>
         </div>

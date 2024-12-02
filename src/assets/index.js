@@ -20,6 +20,12 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import angular from "./tech/angular.png"
+import php from "./tech/php.png"
+import dotnet from "./tech/dotnet.png"
+import bootstrap from "./tech/bootstrap.png"
+import jwt from "./tech/jwt.png"
+import nextjs from "./tech/nextjs.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -70,5 +76,13 @@ export {
   btms12,
   internship,
   doctrak,
-  abfi
+  abfi,
+  angular,
+  php,
+  dotnet,
+  bootstrap,
+  jwt,
+  nextjs,
+
+  
 };

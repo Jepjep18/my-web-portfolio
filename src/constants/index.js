@@ -8,27 +8,21 @@ import {
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
-    mongodb,
     git,
     figma,
-    docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-    btms,
     waternetic,
     btms12,
     internship,
     doctrak,
-    abfi
+    abfi,
+    angular,
+    php,
+    dotnet,
+    bootstrap,
+    jwt,
+    nextjs,
     
   } from "../assets";
   
@@ -92,10 +86,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
       name: "Tailwind CSS",
       icon: tailwind,
     },
@@ -104,12 +94,8 @@ import {
       icon: nodejs,
     },
     {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
+      name: "Angular",
+      icon: angular,
     },
     {
       name: "git",
@@ -120,9 +106,28 @@ import {
       icon: figma,
     },
     {
-      name: "docker",
-      icon: docker,
+      name: "php",
+      icon: php
     },
+    {
+      name: "dotnet",
+      icon: dotnet
+    },
+    {
+      name: "bootstrap",
+      icon: bootstrap
+    },
+    {
+      name: "jwt",
+      icon: jwt
+    },
+    {
+      name: "nextjs",
+      icon: nextjs
+    },
+   
+   
+    
   ];
   
   const experiences = [

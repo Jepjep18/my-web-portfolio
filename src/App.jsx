@@ -10,22 +10,23 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import { Parallax } from 'react-parallax';
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repat bg-center">
-          <Navbar />
-          <Hero />
-        </div>
+        <Parallax strength={300}>
+          <div className="bg-hero-pattern bg-cover bg-no-repat bg-center">
+            <Navbar />
+            <Hero />
+          </div>
+        </Parallax>
         <About />
         <Experience />
         <Tech />
         <Works />
         <Feedbacks />
-
-        
 
         <div className="relative z-0">
           <Contact />

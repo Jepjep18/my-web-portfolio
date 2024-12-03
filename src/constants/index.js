@@ -26,6 +26,8 @@ import {
     mysql,
     canva,
     csharp,
+    github,
+    swagger,
     
   } from "../assets";
   
@@ -140,6 +142,16 @@ import {
       name: "csharp",
       icon: csharp
     },
+    {
+      name: "github",
+      icon: github
+    },
+    {
+      name: "swagger",
+      icon: swagger
+    }
+    
+    
    
    
     

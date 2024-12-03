@@ -29,6 +29,8 @@ import nextjs from "./tech/nextjs.png"
 import mysql from "./tech/mysql.png"
 import canva from "./tech/canva.png"
 import csharp from "./tech/csharp.png"
+import swagger from "./tech/swagger.png"
+
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -88,7 +90,9 @@ export {
   nextjs,
   mysql,
   canva,
-  csharp
+  csharp,
+  swagger
+
 
   
 };

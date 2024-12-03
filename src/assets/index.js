@@ -26,6 +26,9 @@ import dotnet from "./tech/dotnet.png"
 import bootstrap from "./tech/bootstrap.png"
 import jwt from "./tech/jwt.png"
 import nextjs from "./tech/nextjs.png"
+import mysql from "./tech/mysql.png"
+import canva from "./tech/canva.png"
+import csharp from "./tech/csharp.png"
 
 import meta from "./company/meta.png";
 import shopify from "./company/shopify.png";
@@ -83,6 +86,9 @@ export {
   bootstrap,
   jwt,
   nextjs,
+  mysql,
+  canva,
+  csharp
 
   
 };

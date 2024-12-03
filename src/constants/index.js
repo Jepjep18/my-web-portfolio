@@ -23,6 +23,9 @@ import {
     bootstrap,
     jwt,
     nextjs,
+    mysql,
+    canva,
+    csharp,
     
   } from "../assets";
   
@@ -125,12 +128,37 @@ import {
       name: "nextjs",
       icon: nextjs
     },
+    {
+      name: "mysql",
+      icon: mysql
+    },
+    {
+      name: "canva" , 
+      icon: canva
+    },
+    {
+      name: "csharp",
+      icon: csharp
+    },
    
    
     
   ];
   
   const experiences = [
+    {
+      title: "Software Developer Jr.",
+      company_name: "Ana's Breeders Farm, INC.",
+      icon: abfi,
+      iconBg: "#383E56",
+      date: "May 2024 - Present",
+      points: [
+        "Developing and maintaining web applications with AngularJS and .NET, including RESTful APIs built in .NET.",
+        "Collaborating with clients, designers, and managers to ensure a smooth workflow and deliver high-quality projects.",
+        "Implementing responsive design and ensuring cross-browser compatibility.",
+        "Participating in code reviews and providing constructive feedback to other developers.",
+      ],
+    },
     {
       title: "Laravel Developer",
       company_name: "Internship",
@@ -145,19 +173,7 @@ import {
       ],
     },
     
-    {
-      title: "Software Developer Jr.",
-      company_name: "Ana's Breeders Farm, INC.",
-      icon: abfi,
-      iconBg: "#383E56",
-      date: "May 2024 - Present",
-      points: [
-        "Developing and maintaining web applications with AngularJS and .NET, including RESTful APIs built in .NET.",
-        "Collaborating with clients, designers, and managers to ensure a smooth workflow and deliver high-quality projects.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
+    
     
   ];
 
@@ -205,15 +221,15 @@ import {
       tags: [
         {
           name: "PHP",
-          color: "text-gradient-blue", // Commonly associated color for PHP
+          color: "text-gradient-blue",
         },
         {
           name: "MySQL",
-          color: "text-gradient-orange", // Commonly associated color for MySQL
+          color: "text-gradient-orange",
         },
         {
           name: "Bootstrap",
-          color: "text-gradient-purple", // Commonly associated color for Bootstrap
+          color: "text-gradient-purple",
         },
       ],
       image: waternetic,
@@ -226,15 +242,15 @@ import {
       tags: [
         {
           name: "Laravel",
-          color: "text-gradient-red", // Commonly associated color for Laravel
+          color: "text-gradient-red", 
         },
         {
           name: "SQL",
-          color: "text-gradient-blue", // Commonly associated color for SQL
+          color: "text-gradient-blue",
         },
         {
           name: "Flowbite UI",
-          color: "text-gradient-teal", // Commonly associated color for Flowbite
+          color: "text-gradient-teal",
         },
       ],
       image: doctrak,
@@ -247,19 +263,19 @@ import {
       tags: [
         {
           name: "Angular",
-          color: "text-gradient-red", // Commonly associated color for Angular
+          color: "text-gradient-red", 
         },
         {
           name: "REST API",
-          color: "text-gradient-green", // Commonly associated color for REST APIs
+          color: "text-gradient-green", 
         },
         {
           name: "Material UI",
-          color: "text-gradient-blue", // Commonly associated color for Material UI
+          color: "text-gradient-blue",
         },
         {
           name: "MySQL",
-          color: "text-gradient-orange", // Commonly associated color for MySQL
+          color: "text-gradient-orange", 
         },
       ],
       image: btms12,

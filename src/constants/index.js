@@ -172,8 +172,8 @@ import {
       ],
     },
     {
-      title: "Laravel Developer",
-      company_name: "Internship",
+      title: "System Developer (Internship)",
+      company_name: "Department of Information and Communications Technology Region XI",
       icon: internship,
       iconBg: "#383E56",
       date: "December 2023 - May 2024",
@@ -293,6 +293,7 @@ import {
       image: btms12,
       source_code_link: "https://github.com/",
     },
+    
     
     
   ];

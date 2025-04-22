@@ -10,7 +10,7 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
-import { Parallax } from 'react-parallax';
+import { Parallax } from "react-parallax";
 
 const App = () => {
   return (

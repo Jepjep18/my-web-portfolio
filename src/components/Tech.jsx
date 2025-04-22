@@ -13,22 +13,20 @@ const Tech = () => {
         <p className={`${styles.sectionSubText} text-center`}>
           Tools & Technologies
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Tech Stack.
-        </h2>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Tech Stack.</h2>
       </motion.div>
 
       {/* Technology Icons Section */}
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-8">
         {technologies.map((technology) => (
-          <div 
+          <div
             className="w-28 h-28 flex items-center justify-center transition-transform duration-300 transform hover:scale-110"
             key={technology.name}
           >
-            <img 
-              src={technology.icon} 
-              alt={technology.name} 
-              className="w-full h-full object-contain" 
+            <img
+              src={technology.icon}
+              alt={technology.name}
+              className="w-full h-full object-contain"
             />
           </div>
         ))}

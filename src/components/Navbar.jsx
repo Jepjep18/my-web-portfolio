@@ -60,7 +60,7 @@ const Navbar = () => {
             >
               {nav.id === "resume" ? (
                 <a
-                  href="/Arnado_Resume.pdf" // Path to your resume file
+                  href="/Jefferson Arnado - Resume.pdf" // Path to your resume file
                   target="_blank" // Open in a new tab
                   rel="noopener noreferrer" // Recommended for security reasons
                   className="bg-secondary text-white py-2 px-4 rounded"
